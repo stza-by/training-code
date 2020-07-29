@@ -1,0 +1,26 @@
+import React, {Component} from 'react';
+import ErrorIndicator from "../ErrorIndicator";
+
+const withErrorBoundary = WrappedComponent => {
+
+    return class extends Component {
+
+        state = {
+            hasError: false
+        }
+
+        componentDidCatch(error, errorInfo) {
+            this.setState({hasError: true})
+        }
+
+        render() {
+
+            if (this.state.hasError) return <ErrorIndicator/>;
+
+            return <WrappedComponent {...this.props}/>;
+        }
+
+    }
+}
+
+export default withErrorBoundary;
