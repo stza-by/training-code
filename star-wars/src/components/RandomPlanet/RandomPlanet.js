@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
-import SwapiService from '../../services/swapi';
 import Spinner from '../Spinner';
 import './RandomPlanet.css';
 
 import ErrorIndicator from '../ErrorIndicator';
 
 export default class RandomPlanet extends Component {
+
+  static defaultProps = {
+    getPlanet: () => null
+  }
 
   constructor(props) {
     super(props);
