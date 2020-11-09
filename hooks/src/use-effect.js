@@ -36,16 +36,14 @@ const PlanetInfo = ({id}) => {
 
     const [planetName, setPlanetName] = useState(null);
 
+    const getPlanetName = async () => {
+        const res = await fetch(`https://swapi.dev/api/planets/${id}`);
+        const planet = await res.json();
+        setPlanetName(planet.name);
+    }
+
     useEffect(() => {
-
-        const getPlanetName = async () => {
-            const res = await fetch(`https://swapi.dev/api/planets/${id}`);
-            const planet = await res.json();
-            setPlanetName(planet.name);
-        }
-
         getPlanetName();
-
     }, [id]);
 
     return <div> {id} -- {planetName}</div>

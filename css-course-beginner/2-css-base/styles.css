@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+    padding: 5rem 0rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.4rem;
+}
+
+button {
+    font-size: 1.8rem;
+}
+
+nav {
+    background: #b33d3d;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav, nav a {
+    color: white;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    padding: 1rem;
+}
+
+#logo {
+    padding: 1rem;
+}
+
+.hero-section {
+    height: 80rem;
+    background-image: url("https://images.unsplash.com/photo-1521305916504-4a1121188589?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding-top: 10rem;
+    text-shadow: 4px 4px 10px black;
+}
+
+.hero-section button {
+    margin-top: 3rem;
+    padding: 1rem 3rem;
+    background: #b33d3d;
+    border: none;
+    color: white;
+    box-shadow: 3px 3px 10px black;
+}
+
+.form-section, .form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    width: 60%;
+    margin: auto;
+}
+
+.form-section form input,
+.form-section form textarea,
+.form-section form button {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-section form input {
+    font-size: 2rem;
+}
+
+.form-section form button {
+    padding: 1rem;
+    margin-top: 1rem;
+    background: #b33d3d;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
