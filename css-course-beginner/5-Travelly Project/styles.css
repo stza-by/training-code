@@ -1,0 +1,306 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.2%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+li, button, label, input, p {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h4, h5 {
+    font-size: 2.8rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    padding: 2rem 4rem;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+    background: #27394e;
+}
+
+/* Nav Section + Hero */
+
+.main-header {
+    color: white;
+    background-color: #131c27;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.main-header nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 10vh;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    flex: 1 1 40rem;
+}
+
+#logo {
+    flex: 2 1 40rem;
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url('./img/landing-page.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.hero h3 {
+    padding: 5rem;
+}
+
+/* Locations Section */
+
+.location {
+    display:flex;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url('./img/new-york-page.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-header {
+    width: 90%;
+    margin: auto;
+}
+
+.location-header h2 {
+    padding: 1rem 0;
+    text-decoration: underline;
+}
+
+.location-header h3 {
+    padding: 4rem 0;
+}
+
+.cloud {
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.moving-cloud-1 {
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+
+.moving-cloud-2 {
+    animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+    top: 15%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Cloud animation */
+
+@keyframes cloudAnimation {
+    from {
+        transform: translate(10%, -10%);
+    }
+    to {
+        transform: translate(0%, 0%);
+    }
+}
+
+/* Benefits section */
+
+.benefits-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 30vh;
+    text-align: center;
+    padding: 3rem;
+    background-color: #131c27;
+    color: white;
+}
+
+/* Cards section */
+
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 30rem;
+    text-align: center;
+    background: #4c6e97;
+    padding: 2rem;
+    margin: 1rem;
+    color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cards img {
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem;
+}
+
+/* Contact Section */
+
+.contact {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0, 0.5), transparent), url("./img/contact-mountain.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-wrapper {
+    width: 40%;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+
+.form-wrapper h2 {
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-form,
+.email-form {
+    padding: 1rem;
+    text-align: center;
+}
+
+.form-wrapper label {
+    margin: 0rem 3rem;
+}
+
+.form-wrapper input {
+    padding: 0.5rem 2rem;
+}
+
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+footer {
+    color: white;
+    background: rgb(19, 28, 39);
+    display: flex;
+    padding: 2rem 10% 2rem 10%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex-basis: 20rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 45%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #logo {
+        padding: 2rem;
+    }
+
+    .cloud {
+        height: 40rem;
+    }
+
+    .moving-cloud-1 {
+
+    }
+    .moving-cloud-2 {
+        z-index: -2;
+        top: 10%;
+    }
+
+    .form-wrapper {
+        width: 90%;
+    }
+
+}
